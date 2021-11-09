@@ -6,44 +6,54 @@
     <!-- displays site properly based on user's device -->
 
     <link href="./images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
     <title>Frontend Mentor | Tip calculator app</title>
 
 </head>
 <body>
-
-<h1>splitter</h1>
 <div class="container">
-    <div class="left-side">
-        <label class="label" for="billAmount">Bill</label>
-        <input class="input input-billAmount" id="billAmount" type="text">
+    <h1>spli</br>tter</h1>
+    <div class="card">
+        <div class="settings">
+            <label class="label" for="billAmount">Bill</label>
+            <input class="input input-billAmount" id="billAmount" type="text">
 
-        <p class="label">Select Tip %</p>
-        <div class="grid-container">
-            <div class="gridElement1">5%</div>
-            <div class="gridElement1">10%</div>
-            <div class="gridElement1">15%</div>
-            <div class="gridElement1">25%</div>
-            <div class="gridElement1">50%</div>
-            <div class="gridElement1">Custom</div>
+            <p class="label">Select Tip %</p>
+            <div class="grid-container">
+                <div class="gridElement1">5%</div>
+                <div class="gridElement1">10%</div>
+                <div class="gridElement1">15%</div>
+                <div class="gridElement1">25%</div>
+                <div class="gridElement1">50%</div>
+                <div class="gridElement1">Custom</div>
+            </div>
+
+            <label class="label" for="numberOfPeople">Number of People</label>
+            <input class="input input-numberOfPeople" id="numberOfPeople" type="text">
         </div>
+        <div class="totals">
 
-        <label class="label" for="numberOfPeople">Number of People</label>
-        <input class="input input-numberOfPeople" id="numberOfPeople" type="text">
-    </div>
-    <div class="right-side">
+            <div class="tipPerPerson">
+                <div class="tipPerPerson-content">
+                    <p>Tip Amount</p> <p class="perPerson">/ person</p>
+                </div>
+                <p class="total">$0.00</p>
+            </div>
+            <div class="totalPerPerson">
+                <div class="totalPerPerson-content">
+                    <p>Total</p><p class="perPerson">/ person</p>
+                </div>
+                <p class="total">$0.00</p>
+            </div>
 
-        <div class="tipPerPerson">
-            <p>Tip Amount<br>/ person</p>
-            <p>$0.00</p>
+            <a class="btn btn-reset" href="#">Reset</a>
         </div>
-        <div class="totalPerPerson">
-            <p>Total<br>/ person</p>
-            <p>$0.00</p>
-        </div>
-
-        <a class="btn" href="#">Reset</a>
     </div>
 </div>
+
 </body>
 </html>
